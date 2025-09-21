@@ -1,0 +1,22 @@
+#Cake Store open
+muffins = 10
+cupcakes = 10
+
+while True:
+    item = input("What the customer is buying (muffin/cupcake) or 0 to stop: ")
+
+    if item == "0":
+        break
+    elif item == "muffin":
+        if muffins > 0:
+            muffins -= 1
+        else:
+            print("Out of stock")
+    elif item == "cupcake":
+        if cupcakes > 0:
+            cupcakes -= 1
+        else:
+            print("Out of stock")
+
+# Final inventory of the day
+print(f"muffins: {muffins} cupcakes: {cupcakes}")
