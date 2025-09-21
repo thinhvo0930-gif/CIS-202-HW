@@ -1,1 +1,22 @@
+#each pizza has 8 slices
+each_pizza=8
+#there is the family of 4
 
+p1 = int(input("how many the 1st person eat: "))
+p2 = int(input("how many the 2nd person eat: "))
+p3 = int(input("how many the 3rd person eat: "))
+p4 = int(input("how many the 4th person eat: "))
+
+total_pieces=p1+p2+p3+p4
+
+Pizza = total_pieces // each_pizza
+
+if total_pieces % each_pizza != 0:
+     Pizza +=1
+Left_over = Pizza * each_pizza - total_pieces
+
+
+
+print("the total pizza has eaten: ",total_pieces)
+print("left over slides",Left_over)
+print("pizza that needed to order", Pizza)
