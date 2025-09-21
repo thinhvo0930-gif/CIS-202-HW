@@ -1,0 +1,18 @@
+distance_travelled = float(input("enter your distance travelled:"))
+current_speed = float(input("enter your current speed:"))
+limit_speed = float(input("enter your limit speed:"))
+
+#calculate time 1 travel
+time_1 = distance_travelled/current_speed
+print("the time you travel with current speed:",float(round(time_1,2)),"minutes")
+#calculate time 2 travel
+time_2 = distance_travelled/limit_speed
+print("the time you travel with limit speed:",float(round(time_2,2)),"minutes")
+
+#total time you saved
+time_save = time_2 - time_1
+print("the total time you saved:",float(round(time_save,2)),"minutes")
+
+#transfer hour to minuted
+final = time_save * 60
+print("transfer to minutes:",float(round(final,2)),"minutes")
